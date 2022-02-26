@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Programming</title>
+</head>
+<body bgcolor="white">
+<div style="border:10px solid gray;padding:30px;marigin:30px;">
+<h1 style="color:red;"><u>    Let us Learn about the Inheritance in Java using Html:</u></h1>
+<img src ="java-corporate (1).jpg" width=980
+ height=200/>
+    <ul>
+        <li>
+            <h2 style="color:orange;"><u>Inheritance:</u></h2>
+            <p>Inheritance can be defined as a feature of obtaining the properties and behaviour of an existing class by a derived class.i.e; A child class(derived class) can acquire the properties of parent class(existing class).It can be done by using a keyword "extends".</p>
+            <p>There are 5 types of inheritances</p>
+            <ol>
+                <li>Single Inheritance</li>
+                <li>Multi-Level Inheritance</li>
+                <li>Hierarchical Inheritance</li>
+                <li>Multiple Inheritance</li>
+                <li>Hybrid Inheritance</li>
+            </ol>
+
+        </li>
+    </ul>
+    <ol>
+        <li>
+            <h3 style="color:violet;">
+                <u>Single Inheritance: </u> <br>
+            </h3>
+            <p>It is a type of inheritance in which a <b>single</b> derived class(sub class) and a <b>single</b> existing class(super class) are present.</p>
+            <img src="https://i1.wp.com/tutorial.eyehunts.com/wp-content/uploads/2018/12/Example-of-Single-Inheritance-in-Java-with-code.png?resize=500%2C194&ssl=1" alt="loading failed">
+                    <h5>
+                        <u><i> Program Outline</i> :</u>
+                    </h5>
+                    <p>
+                        <table border="3">
+                            <tr>
+                                <td>
+                                    class Old                                                          <br>
+                                    {                                                                  <br>
+                                        public void method1()                                          <br>
+                                        {                                                              <br>
+                                            System.out.println("This is a single inheritance.");  <br>
+                                            System.out.println("Message from class Old.");             <br>                                      
+                                        }                                         <br>
+                                    }                                             <br>
+                                    class Inheritance extends Old                 <br>
+                                    {                                             <br>
+                                        public static void main(String[] args)    <br>
+                                        {                                         <br>
+                                            Inheritance I=new Inheritance();      <br>
+                                            I.method1();                          <br>
+                                        }                                         <br>
+                                    }                                             <br>
+                                </td>
+                            </tr>
+                        </table> 
+                        <h5>
+                            <u><i> Program Output</i> :</u>
+                        </h5>
+                        <p>
+                            <table border=2>
+                                <tr>
+                                    <td>
+                                        This is a single inheritance. <br>
+                                        Message from class Old.
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
+                    </p>
+        </li>
+        <li>
+            <h3
+			style="color:violet;">
+               <u> Multi-level inheritance:</u> <br>
+            </h3>
+            <p>It is a type of inheritance in which a super class,an intermediate class and a derived class are present.i.e; <b>Three classes</b>,The derived class(child class) obtains the properties and behaviour from the intermediate class(parent class), which obtain the properties and behaviour of the super class.</p>
+            <img src="https://i0.wp.com/tutorial.eyehunts.com/wp-content/uploads/2018/12/Example-of-Multilevel-Inheritance-in-Java.png?resize=500%2C264&ssl=1" alt="loading failed">
+                    <h5>
+                        <u><i> Program Outline</i> :</u>
+                    </h5>
+                    <p>
+                        <table border="3">
+                            <tr>
+                                <td>
+                                    class Old <br>
+                                    { <br>
+                                        public void method1() <br>
+                                        { <br>
+                                            System.out.println("This is a multi-level inheritance."); <br>
+                                            System.out.println("Message from class Old."); <br>
+                                        } <br>
+                                    } <br>
+                                    class Intermediate extends Old <br>
+                                    { <br>
+                                        public void method2() <br>
+                                        { <br>
+                                            System.out.println("Message from class Intermediate.");<br>
+                                        } <br>
+                                    } <br>
+                                    class Inheritance extends Intermediate <br>
+                                    { <br>
+                                        public static void main(String[] args) <br>
+                                        { <br>
+                                            Inheritance I=new Inheritance(); <br>
+                                            I.method1(); <br>
+                                            I.method2(); <br>
+                                        } <br>
+                                    } <br>
+                                </td>
+                            </tr>
+                        </table> 
+                        <h5>
+                            <u><i> Program Output</i> :</u>
+                        </h5>
+                        <p>
+                            <table border=2>
+                                <tr>
+                                    <td>
+                                        This is a multi-level inheritance. <br>
+                                        Message from class Old. <br>
+                                        Message from class Intermediate. <br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
+                    </p>
+        </li>
+        <li>
+            <h3 style="color:violet;">
+             <u>  Hierarchical Inheritance:</u> <br>
+            </h3>
+            <p>It is a type of inheritance in which two sub classes are present and the two sub classes obtain the properties and behaviour of same super class.i.e; <b>one super class and two sub classes</b>.</p>
+            <img src="https://th.bing.com/th/id/OIP.lFQQ5jano1DqKI2Lhe2qaQHaDu?pid=ImgDet&rs=1" alt="loading failed">
+                    <h5>
+                        <u><i> Program Outline</i> :</u>
+                    </h5>
+                    <p>
+                        <table border="3">
+                            <tr>
+                                <td>
+                                    class Old <br>
+                                    { <br>
+                                        public void method1()  <br>
+                                        { <br>
+                                            System.out.println("This is a Hierarchical inheritance."); <br>
+                                            System.out.println("Message from class Old.");            <br>                             
+                                        } <br>
+                                    } <br>
+                                    class Inherit extends Old <br>
+                                    { <br>
+                                        public void method2() <br>
+                                        { <br>
+                                            System.out.println("Message from class Inherit."); <br>
+                                        } <br>
+                                    } <br>
+                                    class Inheritance extends Old <br>
+                                    { <br>
+                                        public static void main(String[] args) <br>
+                                        { <br>
+                                            Inheritance I=new Inheritance(); <br>
+                                            I.method1(); <br>
+                                            System.out.println(""); <br>
+                                            Inherit In=new Inherit(); <br>
+                                            In.method1(); <br>
+                                            In.method2(); <br>                                    
+                                        } <br>
+                                    } <br>
+                                </td>
+                            </tr>
+                        </table> 
+                        <h5>
+                            <u><i> Program Output</i> :</u>
+                        </h5>
+                        <p>
+                            <table border=2>
+                                <tr>
+                                    <td>
+                                        This is a Hierarchical inheritance. <br>
+                                        Message from class Old. <br>
+
+                                        This is a Hierarchical inheritance. <br>
+                                        Message from class Old. <br>
+                                        Message from class Inherit. <br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
+                    </p>
+        </li>
+        <li>
+            <h3 style="color:violet;">
+              <u>  Multiple Inheritance:</u> <br>
+            </h3>
+            <p>It is a type of inheritance in which sub class acqire the properties and behaviour of super classes.i.e; <b>Two super classes and one sub class</b></p>
+            <img src="https://1.bp.blogspot.com/-wwfQOShZw0k/Xuwexp85AnI/AAAAAAAAcwc/y2flGo9VwSg7F6rS3IXIBW6fYPkRhVu_wCLcBGAsYHQ/s320/multiple.jpg" alt="loading failed">
+                    <P>Multiple inheritance cannot not be performed by using classes.</P>
+        </li>
+        <li>
+            <h3 style="color:violet;" >
+               <u> Hybrid Inheritance: </u><br>
+            </h3>
+            <p>It is a type of inheritance in which two classes acquires the properties and behaviour of their super class and later they try to share their properties and behaviour to their sub class.It is a combination of <b>multiple and hierarchical inheritances</b>.</p>
+            <img src="https://th.bing.com/th/id/OIP.WCBxWg_nPpS8nJxzOeQi4gHaEL?w=321&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="loading failed">
+                    <P>Hybrid inheritance cannot not be performed by using classes.</P>
+        </li>    
+    </ol>
+</body>
+</html>
